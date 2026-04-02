@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐳 Microservicio Docker | Alpine Linux</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 500px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .docker-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #0f172a;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        
+        .info {
+            background: #f3f4f6;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .label {
+            font-weight: bold;
+            color: #4b5563;
+        }
+        
+        .value {
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        .footer {
+            margin-top: 25px;
+            color: #6b7280;
+            font-size: 12px;
+        }
+        
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ecfdf5;
+            color: #10b981;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="docker-icon">🐳</div>
+        <h1>Microservicio Docker</h1>
+        <div class="badge">✅ En ejecución</div>
+        
+        <div class="info">
+            <div class="info-item">
+                <span class="label">📦 Contenedor:</span>
+                <span class="value">Alpine Linux</span>
+            </div>
+            <div class="info-item">
+                <span class="label">📊 Tamaño:</span>
+                <span class="value">~8.5 MB</span>
+            </div>
+            <div class="info-item">
+                <span class="label">🐳 Motor:</span>
+                <span class="value">Docker</span>
+            </div>
+            <div class="info-item">
+                <span class="label">💻 Plataforma:</span>
+                <span class="value">Linux (Codespaces)</span>
+            </div>
+        </div>
+        
+        <div class="status">
+            <span class="status-dot"></span>
+            Microservicio funcionando correctamente
+        </div>
+        
+        <div class="footer">
+            🚀 Contenedor optimizado | Docker en Linux
+        </div>
+    </div>
+</body>
+</html>
